@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #div1{
+            font-size: large;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            border:15px dashed black;
+            line-height: 2;
+            padding: 20px;
+        }
+        #div2{
+            font-size: large;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            border:10px solid blue;
+            padding:10px;
+            visibility: hidden;
+        }
+        #div3{
+            font-size: large;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            border: 3px solid pink;
+            padding:5px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="div1">
+        <button type="button" id="orange" onclick="handleclick()">Orange</button>
+        <button type="button" id="green">Green</button>
+        <button type="button" id="red">Red</button>
+
+        <!-- <p>RADHE RADHE</p>
+        <div id="div2" onclick="parentcall()">
+            <p>JAI SHREE RAM</p>
+            <div id="div3" onclick="childcall()">
+                <p>JAI HANUMNAN</p>
+            </div> -->
+        </div>
+    </div>
+    <script>
+        // parentcall()
+        // {
+        //     alert("Hanuman Hanuman")
+        //     console.log("div2 appears")
+        // }
+        // function grandparentcall(e){
+        //    var div2=document.getElementById("div2");
+        //    alert("first alert")
+        //    e.stopImmediatePropagation(); 
+        //     div2.style.visibility='visible';
+        // }
+        // document.getElementById("div1").addEventListener("click",(e)=>{
+        //     alert("second alert")
+           
+        // })
+        // document.getElementById("div2").addEventListener("click",parentcall(),false)
+        
+        // function childcall(){
+        //     alert("RADHE RADHE RADHE")
+        //     console.log("div3 appers")
+        // }
+
+
+
+        //closure
+            
+            // document.getElementById("green").onclick= function(){
+            //     document.body.style.backgroundColor = `green`
+            // }
+            // document.getElementById("red").onclick= function(){
+            //     document.body.style.backgroundColor = `red`
+            // }
+            function handleclick(color){
+               return function handlecolor(){
+                document.body.style.backgroundColor = `${color}`
+                }   
+            }
+            document.getElementById("orange").onclick= handleclick("orange")
+            document.getElementById("green").onclick= handleclick("green")
+            document.getElementById("red").onclick= handleclick("red")
+
+
+        // function parentFn(){
+        //     let a = 0;
+        //     function childFn(b){
+        //         a++;
+        //         console.log(a);
+        //         console.log(b);
+        //     }
+        //     return childFn;
+        // }
+
+
+        // const cFn = parentFn();
+        // const cFnn = parentFn();
+        
+
+
+//console.log(cFn(21));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

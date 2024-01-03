@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #div1{
+            border:10px dashed black;
+            padding: 5px;
+            font-size: large;
+        }
+        #div2{
+            border:5px dashed pink;
+            padding: 7px;
+            font-size: large;
+        }
+        #div3   {
+            border:5px dashed rgb(240, 3, 3);
+            padding: 10px;
+            font-size: large;
+        }
+        #div4   {
+            border:5px dashed rgb(196, 240, 3);
+            padding: 10px;
+            font-size: large;
+        }
+    </style>
+</head>
+<body>
+    <div id="div1">DiV1
+        <div id="div2"> DIV 2
+            <div id="div3"> DIV 3
+                <div id="div4"> DIV 4
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+    document.getElementById("div1").addEventListener("click",()=>console.log("div1"),false)
+    document.getElementById("div2").addEventListener("click",()=>console.log("div2"),false)
+    document.getElementById("div3").addEventListener("click",()=>console.log("div3"),false)
+    document.getElementById("div4").addEventListener("click",()=>console.log("div4"),false)
+    </script>
+</body>
+</html>

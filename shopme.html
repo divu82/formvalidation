@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 Example</title>
+    <link rel="stylesheet" href="shopme.css"></link>
+</head>
+<body>
+    <header class="head">
+        <h1>ShopMe.com</h1>
+        <h2>want to shop!STOP</h2>
+    </header>
+    <div class="title">
+        <h1>LOGIN PAGE</h1>
+    </div>
+    <div id="flexibleInputError" style="color: red;"></div>
+    <fieldset class="signin">
+        <legend>Sign In</legend>
+        <form action="" method="post">
+            <label for="flexibleInput">Phone Number, Username, or Email:</label><br>
+            <input type="text" id="flexibleInput" name="flexibleInput" 
+                placeholder="e.g., 9034200831, John Doe, divu26@gmail.com" required ><br>
+                <span id="erruser"></span><br>
+        <label for="password">PASSWORD:</label><br>
+        <input type="password" id="password" name="password" placeholder="Enter your password"  required                ><br>
+        <span id="errpass"></span><br>
+        <label for="cpassword">Confirm password</label><br>
+        <input type="password" id="cpassword" name="cpassword" ><br>
+        <span id="errcpass"></span><br>
+        <input type="checkbox" id="remberme" name="remberme" ><label for="remberme">  Remember this Device</label><br>
+        <button type="button"  class="bb" onclick="check()">Submit</button>
+        <div id="rule">
+             <ul>
+            These rules needed to follow:
+            <li>At least 8 characters long</li>
+            <li>Contains at least one letter (uppercase or lowercase)</li>
+            <li>Contains at least one digit</li>
+            <li>Contains at least one special character from the set [@$!%*#?&]</li>
+        </ul>
+    </div>
+    </form>
+    </fieldset>
+    <table id="table1">
+        <thead>
+            <th>checkbox</th>
+            <th>USERS</th>
+            <th>PASSWORDS</th>
+            <th>BUTTONS</th>
+        </thead>
+        <tbody id="tablebody">
+        </tbody>
+        <tfoot id="tfoot">
+    
+         <th colspan="4"><button  id="deleteall" onclick="deleteall()">Delete ALL</button>
+            <button  id="deleteselected" onclick="deleteselected()">Delete Selected</button></th>
+        </tfoot>
+    </table>
+      <a  href="singup.html" target="_blank" >Create New Account /Signup</a>
+    <script src="script.js">
+    </script>
+</body>
+</html>

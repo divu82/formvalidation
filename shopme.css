@@ -1,0 +1,271 @@
+body{
+   
+    justify-content: center;
+    align-items: center;
+    background-image: url("premium_photo-1672759267981-359d0ae1f614.jpeg");
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+.head{
+        text-align: center;
+        font-size: medium;
+        line-height: .3;
+        background-color:rgb(244, 223, 223);
+}   
+.title{
+    font-family: sans-serif;
+    font-weight: bold;
+    text-decoration: underline;
+    font-style: oblique;
+    background-size:100%;
+    background-color: rgb(245, 247, 247);
+    text-decoration-color: rgb(25, 22, 28);
+    color: rgba(229, 25, 18, 0.815);
+    justify-content: center;
+    display: flex;
+    margin: auto;
+} 
+.info1{
+    margin-top:20px;
+    border: 10px solid rgba(0, 0, 0, 0.658);
+    text-align: justify;
+    width: 650px;
+    font-weight: 900;
+    margin-left: 20px;
+}
+legend{
+    text-align: center;
+}
+.info{
+    border: 5px solid rgba(0, 0, 0, 0.285);
+    line-height: 2;
+    font-size: larger;
+    width: 850px;
+    
+    margin-left: 10px;
+    font-weight: 900;
+    background-color: rgb(245, 247, 247);
+}
+/* main div  */
+.main-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 450px
+}
+.fname,.email,.password,.date,.lname,.cpassword,.mobile{
+    display: block;
+}
+label{
+    text-align: center;
+}
+
+.signin{
+border: 2px dashed #3498db;
+border-radius: 10px;
+font-size:x-large ;
+padding: 10px;
+margin-bottom: 20px;
+background-color: rgb(238, 238, 238);
+width: 350px;
+line-height: 2;
+justify-content: center;
+display: flex;
+
+}
+legend{
+    font-size:xx-large;
+}
+.bb{
+
+   margin-bottom: 35px;
+    color: whitesmoke;
+    width:155px;
+    height: 70px;
+    background-color: rgb(247, 218, 0);
+}
+
+.deleviry{
+    margin-top: 20px;
+    border: 10px solid rgba(0, 0, 0, 0.658);
+    text-align: justify;
+    width: 400px;
+    height: 500px;
+    margin-left: 500px;
+    position: absolute;
+    left:200px;
+    top:150px;
+}
+.address{
+    border:1px dashed rgba(0, 0, 0, 0.452);
+    text-align: center;
+    background-color: rgb(245, 247, 247);
+    width: 450px;
+    font-weight:900;
+    font-size:23px;
+    height: 450px;
+}
+.delin{
+    
+    color: black;
+    font-size:xx-large;
+    padding: 10px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+    display: block;
+}
+#bankinfo{
+    margin-top: 20px;
+    border: 10px solid rgba(0, 0, 0, 0.658);
+    text-align: justify;
+    width: 500px;
+    height: 350px;
+    margin-left: 500px;
+    position: absolute;
+    left:200px;
+    top: 700px;
+}
+.bankinfo1{
+    background-color: rgb(245, 247, 247);
+    width: 600px;
+    margin-top: 15px;
+    margin-left: 18px;
+    font-weight:900;
+    font-size:50px;
+    height: 300px;
+}
+::placeholder{
+    font-size: 25px;
+}
+#cardnumber,#validfrom,#validupto,#cvv{
+    width:500px;
+    text-align: center;
+    border: solid black;
+    margin-left: 25px;
+    padding: 15px;
+}
+
+#days{
+    background-color: #0697f8;
+}
+a{
+    justify-content: center;
+    display: flex;
+    font-size: x-large;
+    font-style: italic;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(0, 4, 246);
+}
+#flexibleInput,#password ,#cpassword{
+    width:500px;
+    border: 5px solid black;
+    padding: 15px;
+}
+#remberme{
+    width: 20px;
+    height: 20px;
+    font-size: larger;
+    margin-bottom: 70px;
+    
+}
+#err{
+    color: red;
+    font-family:cursive;
+}
+#err1{
+    color: red;
+    line-height: .5;
+    font-family:cursive;
+}
+#fname,#lname,#mobile,#email,#date,#country,#address,#pincode,#password2 ,#cpassword2{
+    border: 5px solid black;
+    padding: 10px;
+    
+}
+#errfn,#errmb,#errmail,#errdate,#errcountry,#erraddress,#errpincode{
+    color: red;
+    font-family:cursive;
+}
+#bbt{
+    width:500px;
+    height: 50px;
+    font-size:x-large;
+    color: white;
+    background:#b14848ba;
+    border: 5px solid rgb(0, 0, 0);
+    margin-bottom: 50px;
+    margin-left: 700px;
+}
+#bbc{
+    width: 200px;
+    height: 50px;
+}
+#erruser,#errpass,#errcpass{
+    color: red;
+    font-family:cursive;
+    
+}
+#table1,th,tr,td {
+    border: 3px solid black;
+   padding:5px;
+    font-size: larger;
+    background:#f2f2ae;
+}
+#table1{
+    position: absolute;
+    top:200px;
+    left:800px;
+
+}
+#table2{
+    position: absolute;
+    width:200px;
+    top:200px;
+    left:1350px;
+}
+#tfoot{
+    border: 3px solid black;
+   padding:10px;
+   align-items: center;
+    font-size: larger;
+    background:#f10505;
+}
+.delete{
+    
+    border: 3px  rgb(8, 8, 8);
+    border-radius: 30px;
+    color: #f2f2ae;
+    padding:10px;
+    width: 100px;
+    font-family:'Courier New', Courier, monospace;
+     font-size:x-large;
+     background:#e00d0dfd;
+     font-weight: bolder;
+}
+#deleteall,#deleteselected{
+    border: 3px  rgb(8, 8, 8);
+    border-radius: 30px;
+    color: #f2f2ae;
+    padding:10px;
+    width: 300px;
+    font-family:'Courier New', Courier, monospace;
+     font-size:x-large;
+     background:#e00d0dfd;
+     font-weight: bolder;
+} 
+#rule{
+    font-size: 18px;
+    border: 5px solid red;
+    color: red;
+    font-style: italic;
+    font-weight:900;
+    width:350px;
+    position: relative;
+    left:180px;
+    top:-120px;
+ visibility: hidden;
+
+}
+#tfoot{
+    visibility: hidden;
+}
