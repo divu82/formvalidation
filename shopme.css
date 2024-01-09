@@ -25,6 +25,118 @@ body{
     display: flex;
     margin: auto;
 } 
+/* signin page */
+.signin{
+    border: 2px dashed #3498db;
+    border-radius: 10px;
+    font-size:xx-large ;
+    font-weight: 900;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: rgb(238, 238, 238);
+    width: 600px;
+    height:1550px;
+    line-height: 2; 
+    }
+    #flexibleInput,#name,#dob,#password ,#cpassword,#startdate,#enddate{
+        width:50%;
+        height: 30px;
+        font-size:large;
+        border: 5px solid black;
+        padding: 15px;
+    }
+    ::placeholder{
+        font-size: larger;
+    }
+    #dob,#startdate,#enddate{
+       font-size: larger;
+    }
+    #erruser,#errpass,#errcpass,#errname,#errdob,#errstartdate,#errenddate{
+        color: red;
+        font-family:cursive;
+        
+    }
+    #remberme{
+        width: 20px;
+        height: 20px;
+        font-size: larger;
+        margin-bottom: 70px;
+    }
+    .bb{
+         color: whitesmoke;
+         width:250px;
+         position: absolute;
+         top:165px;
+        left:650px;
+         color: #050505;
+         font-size: larger;
+         height: 80px;
+         background-color: rgb(0, 247, 169);
+     }
+     #rule{
+        font-size: 30px;
+        border: 3px solid rgb(210, 15, 15);
+        color: red;
+        padding: 5px;
+        font-weight:800;
+        width:450px;
+        position:absolute;
+        top: 400px;
+        left:800px;
+     visibility: hidden;
+    
+    }
+    #table1,th,tr,td {
+        border: 5px solid #0b0b0a;
+       padding:5px;
+       color: #bc4749;
+        font-size:x-large;
+        font-weight: 600;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        background:#d6ccc2;
+    }
+    #table1{
+        position: absolute;
+        top:250px;
+        left:650px;
+    
+    }
+    
+    #tfoot{
+        border: 3px solid black;
+       padding:10px;
+       align-items: center;
+        font-size: larger;
+        background:#f10505;
+    }
+    .delete,.edit,.update{
+        
+        border: 5px  rgb(8, 8, 8);
+        border-radius: 30px;
+        color: #f2f2ae;
+        padding:10px;
+        width: 100px;
+        font-family:'Courier New', Courier, monospace;
+         font-size:x-large;
+         background:#e00d0dfd;
+         font-weight: bolder;
+    }
+    #deleteall,#deleteselected{
+        border: 3px  rgb(8, 8, 8);
+        border-radius: 30px;
+        color: #f2f2ae;
+        padding:10px;
+        width: 300px;
+        font-family:'Courier New', Courier, monospace;
+         font-size:x-large;
+         background:#e00d0dfd;
+         font-weight: bolder;
+    } 
+    
+    #tfoot{
+        visibility: hidden;
+    }
+    /* singup page */
 .info1{
     margin-top:20px;
     border: 10px solid rgba(0, 0, 0, 0.658);
@@ -57,75 +169,52 @@ legend{
     display: block;
 }
 label{
-    text-align: center;
+    text-align:justify;
 }
-
-.signin{
-border: 2px dashed #3498db;
-border-radius: 10px;
-font-size:x-large ;
-padding: 10px;
-margin-bottom: 20px;
-background-color: rgb(238, 238, 238);
-width: 350px;
-line-height: 2;
-justify-content: center;
-display: flex;
-
+/* deleviry div */
+.deleviry-div{
+    display: flex;
+    border: 10px solid rgba(1, 1, 1, 0.592);
+    height: 550px;
+    position:absolute;
+    top:180px;
+    left: 1000px;
 }
-legend{
-    font-size:xx-large;
-}
-.bb{
-
-   margin-bottom: 35px;
-    color: whitesmoke;
-    width:155px;
-    height: 70px;
-    background-color: rgb(247, 218, 0);
-}
-
-.deleviry{
-    margin-top: 20px;
-    border: 10px solid rgba(0, 0, 0, 0.658);
-    text-align: justify;
-    width: 400px;
-    height: 500px;
-    margin-left: 500px;
-    position: absolute;
-    left:200px;
-    top:150px;
-}
-.address{
-    border:1px dashed rgba(0, 0, 0, 0.452);
-    text-align: center;
+.addressmain{
+    border:5px solid rgb(181, 177, 177);
     background-color: rgb(245, 247, 247);
-    width: 450px;
-    font-weight:900;
-    font-size:23px;
-    height: 450px;
+    margin: 20px;
+    width:500px;
+    height: 400px;
+    font-size: x-large;
+    padding: 50px;
 }
-.delin{
-    
-    color: black;
-    font-size:xx-large;
-    padding: 10px;
-    margin-bottom: 20px;
-    line-height: 1.5;
+.country,.address,.pincode,.State,.city{
     display: block;
-}
-#bankinfo{
-    margin-top: 20px;
-    border: 10px solid rgba(0, 0, 0, 0.658);
-    text-align: justify;
     width: 500px;
-    height: 350px;
-    margin-left: 500px;
-    position: absolute;
-    left:200px;
-    top: 700px;
 }
-.bankinfo1{
+/* Banking div */
+.bank-div{
+    border: 10px solid rgba(1, 1, 1, 0.592);
+    width:500px;
+    position:absolute;
+    top:180px;
+    left: 1700px;
+}
+.bankmain{
+   border: 5px solid rgb(167, 163, 163);
+   margin: 25px;
+   padding: 10px;
+   width: 400px;
+   height: 350px;
+   display: block;
+   background-color: white;
+} 
+.cardnumber,.validfrom,.validupto,.cvv{
+    width:400px;
+}
+
+/* .bankinfo1{
     background-color: rgb(245, 247, 247);
     width: 600px;
     margin-top: 15px;
@@ -133,17 +222,41 @@ legend{
     font-weight:900;
     font-size:50px;
     height: 300px;
-}
-::placeholder{
+} */
+/* ::placeholder{
     font-size: 25px;
 }
-#cardnumber,#validfrom,#validupto,#cvv{
-    width:500px;
-    text-align: center;
-    border: solid black;
-    margin-left: 25px;
-    padding: 15px;
+ */
+
+ /* table 2 */
+ #table2{
+    position: absolute;
+    width:90%;
 }
+/* submit button */
+#bbt{
+    width:500px;
+    height: 50px;
+    font-size:xx-large;
+    color: rgb(253, 251, 251);
+    background:#4851b1;
+    border: 5px solid rgb(0, 0, 0);
+    margin-left: 1700px;
+    font-weight: 700;
+    position: absolute;
+    top:650px; 
+}
+/* error signup page */
+#errfn,#errln,#errmb,#erremail,#errdate,#errcountry,#erraddress,#errpincode,#errpass,#errcpass{
+    color: red;
+    text-align: center;
+    font-family:cursive;
+}
+
+legend{
+    font-size:xx-large;
+}
+
 
 #days{
     background-color: #0697f8;
@@ -156,18 +269,8 @@ a{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: rgb(0, 4, 246);
 }
-#flexibleInput,#password ,#cpassword{
-    width:500px;
-    border: 5px solid black;
-    padding: 15px;
-}
-#remberme{
-    width: 20px;
-    height: 20px;
-    font-size: larger;
-    margin-bottom: 70px;
-    
-}
+
+
 #err{
     color: red;
     font-family:cursive;
@@ -182,90 +285,10 @@ a{
     padding: 10px;
     
 }
-#errfn,#errmb,#errmail,#errdate,#errcountry,#erraddress,#errpincode{
-    color: red;
-    font-family:cursive;
-}
-#bbt{
-    width:500px;
-    height: 50px;
-    font-size:x-large;
-    color: white;
-    background:#b14848ba;
-    border: 5px solid rgb(0, 0, 0);
-    margin-bottom: 50px;
-    margin-left: 700px;
-}
+
+
 #bbc{
     width: 200px;
     height: 50px;
 }
-#erruser,#errpass,#errcpass{
-    color: red;
-    font-family:cursive;
-    
-}
-#table1,th,tr,td {
-    border: 3px solid black;
-   padding:5px;
-    font-size: larger;
-    background:#f2f2ae;
-}
-#table1{
-    position: absolute;
-    top:200px;
-    left:800px;
 
-}
-#table2{
-    position: absolute;
-    width:200px;
-    top:200px;
-    left:1350px;
-}
-#tfoot{
-    border: 3px solid black;
-   padding:10px;
-   align-items: center;
-    font-size: larger;
-    background:#f10505;
-}
-.delete{
-    
-    border: 3px  rgb(8, 8, 8);
-    border-radius: 30px;
-    color: #f2f2ae;
-    padding:10px;
-    width: 100px;
-    font-family:'Courier New', Courier, monospace;
-     font-size:x-large;
-     background:#e00d0dfd;
-     font-weight: bolder;
-}
-#deleteall,#deleteselected{
-    border: 3px  rgb(8, 8, 8);
-    border-radius: 30px;
-    color: #f2f2ae;
-    padding:10px;
-    width: 300px;
-    font-family:'Courier New', Courier, monospace;
-     font-size:x-large;
-     background:#e00d0dfd;
-     font-weight: bolder;
-} 
-#rule{
-    font-size: 18px;
-    border: 5px solid red;
-    color: red;
-    font-style: italic;
-    font-weight:900;
-    width:350px;
-    position: relative;
-    left:180px;
-    top:-120px;
- visibility: hidden;
-
-}
-#tfoot{
-    visibility: hidden;
-}

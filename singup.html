@@ -14,6 +14,7 @@
 <div class="title">
     <h1> Sign Up</h1>
 </div>
+<!-- Main div -->
 <fieldset class="info1">
 <fieldset class="info">
     <legend>Personal Information</legend>
@@ -24,21 +25,22 @@
             <div class="fname">
                 <label for="fname" class="fname">First name</label>
                 <input type="text" name="fname" class="fname">
-                <span class="errfn">err</span>
+                <span id="errfn"></span>
             </div>
             <div class="email">
                 <label for="email" class="email">E-mail</label>
-                <input type="text" name="email class="email>
-                <span class="erremail"></span>
-            </div> <div class="password">
+                <input type="text" name="email" class="email">
+                <span id="erremail"></span>
+            </div> 
+            <div class="password">
                 <label for="password" class="password">Password</label>
                 <input type="password" name="password" class="password">
-                <span class="errpass">errpaass</span>
+                <span id="errpass"></span>
             </div>
             <div class="date">
             <label for="date">Date of Birth</label>
             <input type="date" class="date" name="date" min="2005" > 
-            <span id="errdate" class="errdate"></span>
+            <span id="errdate" ></span>
         </div>
         </div>
 
@@ -47,16 +49,16 @@
             <div class="lname">
                 <label for="lname" class="lname">Last Name</label>
                 <input type="text" name="lname" class="lname">
-                <span class="errln">err</span>
+                <span id="errln"></span>
             </div>
             <div class="mobile">
                 <label for="mobile" class="mobile">Mobile</label>
                 <input type="text" name="mobile" class="mobile">
-                <span class="errmb"></span>
+                <span id="errmb"></span>
             </div> <div class="cpassword">
                 <label for="cpassword" class="cpassword"> Confirm Password</label>
                 <input type="cpassword" name="cpassword" class="cpassword">
-                <span class="errcpass">errpaass</span>
+                <span id="errcpass"></span>
             </div>
             <div class="gender">
             <label for="gender">Gender</label><br>
@@ -67,61 +69,78 @@
         </div>
         </div>
     </div>
-    
-<!-- <fieldset class="deleviry">
-    <legend> Deleviry Information</legend>
-<fieldset class="address">
-    <legend> Address</legend>
+</fieldset>
+</fieldset>
+<!-- Deleviry div -->
+<div class="deleviry-div">
+<fieldset class="addressmain">
+    <legend>Deleviry Information</legend>
     <form action="" method="post">
-        <label for="country">Choose Country</label><br>
-        <select id="country" name="country" required>
-            <option value="" disabled selected>Country</option>
-
-            <option value="India">India</option>
-            <option value="United Kingdom">United Kingdom</option>
-            <option value="Europe">Europe</option>
-            <option value="Pakistan">Pakistan</option>
-        </select><br>
-        <span id="errcountry" name="errcountry"></span><br>
-        <label for="address">Flat,house no.,Building,Company,Apartment</label>
-        <input type="text" id="address" required ></input><br>
-        <span id="erraddress" name="erraddress"></span><br>
-         <label for="address">Area ,Street,Sector,Village</label><br>
-        <input type="text" id="address" required></input><br>
-        <label for="address">Landmark</label><br>
-        <input type="text" id="address" placeholder="E.g near CDCL"></input><br> 
-        <label for="pincode">Pincode</label><br>
-        <input type="tel" id="pincode" placeholder="6 Digit Pincode"></input><br>
-        <span id="errpincode" name="errpincode"> </span><br>
-        <label for="State">Select State</label>
-        <select id="State" name="State" onchange="updatecity()">
-            <option value="" disabled selected>State</option>
-            <option value="Haryana" selected>Haryana</option>
-            <option value="Punjab">Punjab</option>
-            <option value="Jammu-Kashmir">Jammu-Kashmir</option>
-            <option value="Gujarat">Gujarat</option>
-        </select><br>
-        <label for="city">Town/City</label><br>
-        <select id="city" name="city"> </select><br>
-        <button type="button"  onclick="holdclick()">Deleviry Instructions(optional)<bR> Notes,Prefrences and more</button>
-    </form>
+        <div class="country">
+            <label for="country">Choose Country</label>
+            <select class="country" name="country" required>
+                <option value="" disabled selected>Country</option>
+                <option value="India">India</option>
+                <option value="United Kingdom">United Kingdom</option>
+                <option value="Europe">Europe</option>
+                <option value="Pakistan">Pakistan</option>
+            </select><br>
+            <span id="errcountry" name="errcountry"></span>
+        </div>
+        <div class="address">
+            <label for="address">Flat,house no.,Building,Company,Apartment</label>
+            <input type="text" class="address" required ></input>
+            <span id="erraddress" name="erraddress"></span>
+        </div>
+        <div class="pincode">
+            <label for="pincode">Pincode</label>
+            <input type="tel" class="pincode" placeholder="6 Digit Pincode"></input><br>
+            <span id="errpincode" name="errpincode"> </span>
+        </div>
+        <div class="state">
+            <label for="State">Select State</label>
+            <select class="State" name="State" onchange="updatecity()">
+                <option value="" disabled selected>State</option>
+                <option value="Haryana" selected>Haryana</option>
+                <option value="Punjab">Punjab</option>
+                <option value="Jammu-Kashmir">Jammu-Kashmir</option>
+                <option value="Gujarat">Gujarat</option>
+            </select>
+        </div>
+        <div class="city">
+            <label for="city">Town/City</label><br>
+            <select class="city" name="city"> </select>
+        </div>
 </fieldset>
-</fieldset>
-<fieldset id="bankinfo">
-    <legend>Banking Information</legend>
+</div>
+<!--Banking Div -->
+<div class="bank-div">
+    <fieldset class="bankmain">
+        <legend>Banking Information</legend>
         <form class="bankinfo1" action="" method="post">
-            <input type="tel" id="cardnumber" name="cardnumber" placeholder="Card Number" required><br>
-            <span id="errcardnumber" name="errcardnumber"></span>
-            <input type="date" id="validfrom" name="validfrom" required>
-            <span id="errvalidfrom" name="errvalidfrom"></span>
-            <input type="date" id="validupto" name="validupto" required>
-            <span id="errvalidupto" name="errvalidupto"></span>
-            <input type="tel" id="cvv" name="cvv" placeholder="CVV" required>
-            <span id="errcvv" name="errcvv"></span>
+            <div class="cardnumber">
+                <input type="tel" class="cardnumber" name="cardnumber" placeholder="Card Number" required><br>
+                <span id="errcardnumber" name="errcardnumber"></span>
+            </div>
+            <div class="validfrom">
+                <label class="validupto">Valid From</label>
+                <input type="date" class="validfrom" name="validfrom" required>
+                <span id="errvalidfrom" name="errvalidfrom"></span>
+            </div>
+            <div class="validupto">
+                <label class="validupto">Valid Upto</label>
+                <input type="date" class="validupto" name="validupto" required>
+                <span id="errvalidupto" name="errvalidupto"></span>
+            </div>
+            <div class="cvv">
+                <label class="validupto">CVV</label>
+                <input type="tel" class="cvv" name="cvv" placeholder="CVV" required>
+                <span id="errcvv" name="errcvv"></span>
+            </div>
         </form>
- </fieldset>
- <button type="button" id="bbt" onclick="validation()">SUBMIT</button>
-
+    </fieldset>
+</div>
+<button type="button" id="bbt" onclick="validation()">SUBMIT</button>
 <table id="table2">
     <thead>
         <th>First Name</th>
@@ -136,14 +155,17 @@
         <th>Pincode</th>
         <th>BUTTONS</th>
     </thead>
-    <tbody id="tablebody2">
+    <tbody class="tablebody2">
     </tbody>
     <tfoot id="tfoot2">
-
-     <th colspan="4"><button  id="deleteall" onclick="deleteall()">Delete ALL</button>
+     <th colspan="11"><button  id="deleteall" onclick="deleteall()">Delete ALL</button>
         <button  id="deleteselected" onclick="deleteselected()">Delete Selected</button></th>
     </tfoot> 
-</table> -->
+</table>
+<!--
+        <button type="button"  onclick="holdclick()">Deleviry Instructions(optional)<bR> Notes,Prefrences and more</button>
+
+ -->
 <script src="script.js"></script>
 </body>
 </html>

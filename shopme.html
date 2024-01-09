@@ -4,20 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML5 Example</title>
-    <link rel="stylesheet" href="shopme.css"></link>
+    <link rel="stylesheet" href="shopme1.css"></link>
 </head>
-<body>
+<body onload="setmaxdate()" >
     <header class="head">
         <h1>ShopMe.com</h1>
         <h2>want to shop!STOP</h2>
     </header>
-    <div class="title">
+    <!-- <div class="title">
         <h1>LOGIN PAGE</h1>
+    </div> -->
+    <div class="overlay"></div>
+    <div class="whatdo">
+        <h1> HELLO! YOU WANT TO Login?</h1>
     </div>
-    <div id="flexibleInputError" style="color: red;"></div>
+    <div class="loginbtn">
+        <button >LOGIN </button>
+    </div>
+    <div class="loginpop">
+        <button class="close" >&#10006;</button>
     <fieldset class="signin">
         <legend>Sign In</legend>
         <form action="" method="post">
+            <label for="Name">NAME</label><br>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required><br>
+            <span id="errname"></span><br>
             <label for="flexibleInput">Phone Number, Username, or Email:</label><br>
             <input type="text" id="flexibleInput" name="flexibleInput" 
                 placeholder="e.g., 9034200831, John Doe, divu26@gmail.com" required ><br>
@@ -28,10 +39,20 @@
         <label for="cpassword">Confirm password</label><br>
         <input type="password" id="cpassword" name="cpassword" ><br>
         <span id="errcpass"></span><br>
-        <input type="checkbox" id="remberme" name="remberme" ><label for="remberme">  Remember this Device</label><br>
+        <label for="dob">DATE OF BIRTH</label><br>
+        <input type="date" id="dob" name="dob" min="1999-01-01"required><br>
+        <span id="errdob" name="errdob"></span><br>
+        <label for="startdate">START DATE</label><br>
+        <input type="date" id="startdate" name="startdate" min="1999-01-01" required><br>
+        <span id="errstartdate" name="errstartdate"></span><br>
+        <label for="enddate">END DATE</label><br>
+        <input type="date" id="enddate" name="enddate" required><br>
+        <span id="errenddate" name="errenddate"></span><br>
+        <input type="checkbox" id="remberme" name="remberme" ><label for="remberme">  Remember this Device</label>
+        <label class="errattempt"></label><br>
         <button type="button"  class="bb" onclick="check()">Submit</button>
+        <button type="button" class="reset" onclick="resetpassword()">Reset Password</button>
         <div id="rule">
-             <ul>
             These rules needed to follow:
             <li>At least 8 characters long</li>
             <li>Contains at least one letter (uppercase or lowercase)</li>
@@ -39,25 +60,48 @@
             <li>Contains at least one special character from the set [@$!%*#?&]</li>
         </ul>
     </div>
-    </form>
-    </fieldset>
-    <table id="table1">
+        </form>
+     </fieldset>
+     <div id="secure-div">
+        <select id="securityquestion">  
+            Questions Available are:
+            <option value="hero">Your Childhood Fav Character?</option>
+            <option value="school">Your First School?</option>
+            </select>
+        </div>
+    </div>
+    <table class="table1">
         <thead>
-            <th>checkbox</th>
-            <th>USERS</th>
-            <th>PASSWORDS</th>
+            <th>CHECKBOX</th>
+            <th>NAMES</th>
+            <th>USER-NAME</th>
+            <th>DOB</th>
+            <th>START DATE</th>
+            <th>END DATE</th>
             <th>BUTTONS</th>
+            <th>EDIT</th>
+            <tr>
+                <td><input type="checkbox" class="checkbox" style="width:50px ;height:20px"></td>
+                <td><input type="text" class="filtname" placeholder="🔍 Search"></td>
+                <td><input type="text" class="filtusers" placeholder="🔍 Search"></td>
+                <td><input type="text" class="filtdob" placeholder="🔍 Search"></td>
+                <td><input type="date" class="filtstartdate" placeholder="🔍 Search"></td>
+                <td><input type="date" class="filtenddate" placeholder="🔍 Search"></td>
+                <td></td>
+                <td></td>
+            </tr>
         </thead>
         <tbody id="tablebody">
         </tbody>
         <tfoot id="tfoot">
-    
-         <th colspan="4"><button  id="deleteall" onclick="deleteall()">Delete ALL</button>
+         <th colspan="9"><button  id="deleteall" onclick="deleteall()">Delete ALL</button>
             <button  id="deleteselected" onclick="deleteselected()">Delete Selected</button></th>
         </tfoot>
     </table>
       <a  href="singup.html" target="_blank" >Create New Account /Signup</a>
     <script src="script.js">
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
 </body>
 </html>

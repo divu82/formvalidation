@@ -1,0 +1,294 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    margin: 20px;
+    background-image: url("bg.png");
+    background-size:100%;
+    background-repeat: no-repeat;
+}
+/* .overlay{
+    background-color: #00000060;
+    width:200%;
+    height:1000px;
+    z-index: 8;
+} */
+.whatdo{
+    background-color: aliceblue;
+    border:2px solid #000000;
+    position: absolute;
+    top:20%;
+    right:73%;
+}
+.opendb{
+    width:200px;
+    height:10vh;
+    color: wheat ;
+    position:absolute;
+    top:50%;
+    left:60%;
+    font-weight: 800;
+    font-size: large;
+    z-index: 9;
+    transform: translate(-50%,50%);
+    background: green;
+}
+.loginpop{
+    border: 5px solid red;  
+    height: 900px;
+    position: absolute;
+    top:-85%;
+    width:30%;
+    opacity: 0;
+    z-index: 0;
+    transition: 2s;
+    align-items: center;
+}
+.loginbtn{
+    width:100px;
+}
+.close{
+    background-color: #f44336;
+    margin-left: 92%;
+    /* position: absolute;
+    left: 90%; */
+    width: 40px;
+    font-size: large;
+}
+.loginbtn button{
+    width:200px;
+    height:10vh;
+    font-weight: 800;
+    font-size: large;
+    color: wheat ;
+    position:absolute;
+    top:28%;
+    right:77%;
+    z-index: 888;
+    transform: translate(-50%,50%);
+    background: green;
+}
+.loginbtn1{
+    width:200px ;
+    height:10vh ;
+    font-weight: 800;
+    font-size: large;
+    color: wheat ;
+    position:absolute;
+    top:12% !important;
+    left:40%;
+    z-index: 888;
+    transform: translate(-50%,50%);
+    background: green;
+}
+
+.openpop{
+        position: absolute;
+        top: 15%;
+        transform: translate(-8);
+        opacity: 1;
+        z-index: 999; 
+        backdrop-filter: blur(8px);
+        background-color: rgba(255, 255, 255, 0.5); 
+} 
+.editopenpop{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-8);
+    opacity: 1;
+    z-index: 999; 
+    backdrop-filter: blur(8px);
+    background-color: rgba(255, 255, 255, 0.5); 
+}
+.editopentable{
+    position: absolute !important;
+    bottom: 65% !important;
+    transform: translate(-8px) !important;
+    opacity: 1 !important   ;
+    z-index: 999!important; 
+    backdrop-filter: blur(8px) ;
+    transition: 4s;
+    background-color: rgba(255, 255, 255, 0.5); 
+}
+.opentable{
+        position: absolute !important;
+        bottom: 50% !important;
+        transform: translate(-8px) !important;
+        opacity: 1 !important   ;
+        z-index: 888 !important; 
+        backdrop-filter: blur(8px) ;
+        transition: 4s;
+        background-color: rgba(255, 255, 255, 0.5); 
+}
+
+.title {
+    font-family: sans-serif;
+    font-weight: 700;
+    text-decoration: underline;
+    font-style: oblique;
+    width: 105%;
+    height: 5vh;;
+    background-size: 100%;
+    background-color: rgba(44, 255, 255, 0.243);
+    text-decoration-color: rgb(25, 22, 28);
+    color: rgba(255, 8, 0, 0.815);
+    text-align: center;
+    padding: 10px;
+}
+
+.head {
+    text-align: center;
+    font-size: medium;
+    width: 105%;
+    height: 11vh;
+    color: rgb(255, 0, 0);
+    line-height: 1;
+    background-color: rgba(237, 237, 51, 0.841);
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.signin {
+    background-color: rgb(255, 255, 255);
+    align-self: flex-start;
+}
+#erruser,#errname,#errpass,#errcpass,#errstartdate,#errenddate,#errdob{
+    color:rgb(255, 0, 0);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+}
+.signin label {
+    margin-top: 10px;
+    font-size: large;
+    font-weight: 900;
+}
+
+.signin input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    box-sizing: border-box;
+}
+
+.bb {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: 1;
+    width: 40%;
+    cursor: pointer;
+}
+.reset{
+    padding: 10px;
+    visibility: hidden;
+    color: white;
+    border: 1;
+    width: 40%;
+    cursor: pointer;
+    background-color: #1d08ff;
+}
+/* Hidden class */
+.hidden{
+    visibility: hidden;
+}
+/* Example styling for the table */
+.table1 {
+    width: 48%; 
+    box-sizing: border-box;
+    opacity:1;
+    align-self: flex-end;
+    margin-top: 20px;
+    border-collapse: collapse;
+    position:absolute;
+    bottom: 10%;
+    left: 20%;
+    transition:3s ;
+}
+.table1 th, .table1 td {
+    padding: 8px;
+    border: 1px solid #000000;
+    text-align: left;
+}
+
+.table1 th ,tbody,tr{
+    background-color: #f5e874;
+}
+
+.table1 button {
+        width: auto; /* Allow the button to take its natural width */
+    padding: 5px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    cursor: pointer;
+    display: inline-block; /* Display the button inline */
+    margin-right: 5px;
+}
+
+.table1 a {
+    text-decoration: none;
+    color: #3498db;
+}
+
+.table1 a:hover {
+    text-decoration: underline;
+}
+.delete,.edit{
+    border: 5px  rgb(8, 8, 8);
+    border-radius: 30px;
+    color: #f2f2ae;
+    padding:10px;
+    width: 100px;
+    font-family:'Courier New', Courier, monospace;
+     font-size:large;
+     background:#e00d0dfd;
+     font-weight: bold;
+}
+#deleteall,#deleteselected{
+    border: 3px  rgb(8, 8, 8);
+    border-radius: 30px;
+    visibility: hidden;
+    color: #f2f2ae;
+    padding:10px;
+    font-weight: bold;
+    font-family:'Courier New', Courier, monospace;
+     font-size:large;
+     background:#e00d0dfd;
+} 
+#rule{
+    border: 3px solid rgb(210, 15, 15);
+    color: red;
+    padding: 5px;
+    font-weight:800;
+ visibility: hidden;
+
+}#remberme{
+    width: 20px;
+    height: 20px;
+    font-size: larger;
+    margin-bottom: 10px;
+}
+.errattempt{
+    width: 20px;
+    height: 20px;
+    color: red;
+    font-size: larger;
+    margin-left:65px;
+    visibility: hidden;
+}
+#secure-div{
+    position: absolute;
+    top: 500px;
+    right:860px;
+    visibility: hidden;
+}
+#securityquestion{
+    font-size: 20px;
+    font-weight: 700;
+    border:3px solid red;
+}
